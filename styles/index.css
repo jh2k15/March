@@ -1,0 +1,8 @@
+@media (min-width: 768px){
+    #navbar-cx .collapse{position: relative;}
+    #navbar-cx .btn-group{position: absolute;top: 8px;right: 0;}
+    .transparent-cx1{background: 0;border: 0;}
+    #navbar-cx .active a.transparent-cx2{background:0;text-decoration: underline;}
+    #carousel-cx .carousel-caption p {font-size: 18px;}
+}
+
