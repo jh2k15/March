@@ -19,7 +19,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -28,18 +28,16 @@
       <a class="navbar-brand" href="#">LEIJUN.CX</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a class="transparent-cx2" href="#">歌手 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#summary">专辑</a></li>
+        <li class="active"><a class="transparent-cx2" href="#btn-group-cx">分类 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#summary">热门</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">排行榜 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">最新<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#music-tab" data-tab="china">内地</a></li>
-            <li><a href="#music-tab" data-tab="america">欧美</a></li>
-            <li><a href="#music-tab" data-tab="korea">日韩</a></li>
-            <li class="divider"></li>
-            <li><a href="#">小语种</a></li>
+            <li><a href="#nav-tabs-cx" data-tab="china">栏目1</a></li>
+            <li><a href="#nav-tabs-cx" data-tab="america">栏目2</a></li>
+            <li><a href="#nav-tabs-cx" data-tab="korea">栏目3</a></li>
           </ul>
         </li>
       </ul>
@@ -96,34 +94,105 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<style>
-  #summary{padding: 60px 0;}
-  #summary .col-md-4{text-align: center;}
-  #summary .col-md-4 img{width:200px;}
-</style>
-<div class="container" id="summary">
 
-    <!-- 简介 -->
-    <div class="row" id="summary-container">
-        <div class="col-md-4">
-            <img class="img-circle" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000004BZHze01aERt.jpg?max_age=2592000" alt="">
-            <h2>欧美</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat </p>
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+<!-- Single button -->
+<div id="btn-group-cx" class="container">
+    <div class="recommend-line"><span>分类</span></div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目1<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目2<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目3<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目4<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目5<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目6<span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+
+<div class="container" id="summary">
+    <div class="recommend-line"><span>热门</span></div>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" src="images/cx.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+            <div class="caption">
+              <h3>节选自《大唐三藏圣教序》</h3>
+              <p>朕才谢珪璋，言惭博达，至于内典，尤所未闲。昨制序文，深为鄙拙，唯恐秽翰墨于金简，标瓦砾于珠林。忽得来书，谬承褒赞，循躬省虑；弥益厚颜，善不足称，空劳致谢。</p>
+              <p><a href="#" class="btn btn-default" role="button">全文</a></p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000001SND942QTTgA.jpg?max_age=2592000" alt="">
-            <h2>日韩</h2>
-            <p>eum harum doloremque numquam, distinctio quaerat, voluptates ipsum eaque </p>
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" src="images/cx.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+            <div class="caption">
+              <h3>节选自《大唐三藏圣教序》</h3>
+              <p>朕才谢珪璋，言惭博达，至于内典，尤所未闲。昨制序文，深为鄙拙，唯恐秽翰墨于金简，标瓦砾于珠林。忽得来书，谬承褒赞，循躬省虑；弥益厚颜，善不足称，空劳致谢。</p>
+              <p><a href="#" class="btn btn-default" role="button">全文</a></p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-            <img class="img-circle" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000002SqR2J2I4k8w.jpg?max_age=2592000" alt="">
-            <h2>内地</h2>
-            <p>odio ducimus quasi molestias non provident facere animi quam iste odit.</p>
-            <p><a class="btn btn-default" href="#" role="button">点我下载</a></p>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" src="images/cx.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+            <div class="caption">
+              <h3>节选自《大唐三藏圣教序》</h3>
+              <p>朕才谢珪璋，言惭博达，至于内典，尤所未闲。昨制序文，深为鄙拙，唯恐秽翰墨于金简，标瓦砾于珠林。忽得来书，谬承褒赞，循躬省虑；弥益厚颜，善不足称，空劳致谢。</p>
+              <p><a href="#" class="btn btn-default" role="button">全文</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/100%x200" alt="100%x200" src="images/cx.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+            <div class="caption">
+              <h3>节选自《大唐三藏圣教序》</h3>
+              <p>朕才谢珪璋，言惭博达，至于内典，尤所未闲。昨制序文，深为鄙拙，唯恐秽翰墨于金简，标瓦砾于珠林。忽得来书，谬承褒赞，循躬省虑；弥益厚颜，善不足称，空劳致谢。</p>
+              <p><a href="#" class="btn btn-default" role="button">全文</a></p>
+            </div>
+          </div>
         </div>
     </div>
+</div>
 
 
 <!--模态框-->
@@ -145,48 +214,75 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <!--标签页-->
-<style>
-  #tab{padding: 50px 0;}
-</style>
-<div class="container" id="tab">
-    <ul class="nav nav-tabs" id="music-tab">
-      <li role="presentation" class="active"><a href="#china" data-toggle="tab">内地</a></li>
-      <li role="presentation"><a href="#america" data-toggle="tab">欧美</a></li>
-      <li role="presentation"><a href="#korea" data-toggle="tab">日韩</a></li>
+
+<div class="container">
+  <div class="recommend-line"><span>最新</span></div>
+    <ul class="nav nav-tabs" id="nav-tabs-cx">
+      <li role="presentation" class="active"><a href="#china" data-toggle="tab">栏目1</a></li>
+      <li role="presentation"><a href="#america" data-toggle="tab">栏目2</a></li>
+      <li role="presentation"><a href="#korea" data-toggle="tab">栏目3</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="china">
-          <div class="col-md-7">
-                        <h2 class="feature-heading">生来倔强<small>南征北战</small></h2>
-                        <p class="lead">中韩足球大战1:0大快人心！中国红帅出天际！</p>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目1</small></h4>
           </div>
-          <div class="col-md-5">
-              <img class="img-responsive" src="https://shp.qpic.cn/qqvideo_ori/0/z0023sn82d3_360_204/0" alt="">
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目1</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目1</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目1</small></h4>
           </div>
         </div>
         <div class="tab-pane" id="america">
-          <div class="col-md-7">
-                  <h2 class="feature-heading">keep me crazy<small>Sheppard</small></h2>
-                  <p class="lead">澳大利亚独立乐队 Sheppard 的新作 Keep Me Crazy，在澳大利亚Itunes热度已经上升到前二十</p>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目2</small></h4>
           </div>
-          <div class="col-md-5">
-              <img class="img-responsive" src="https://shp.qpic.cn/qqvideo_ori/0/y0023b5cxcx_360_204/0" alt="">
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目2</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目2</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目2</small></h4>
           </div>
         </div>
         <div class="tab-pane" id="korea">
-          <div class="col-md-7">
-                  <h2 class="feature-heading">마지막 순간<small>尹钟信</small></h2>
-                  <p class="lead">윤종신(尹钟信) / 포르테 디 콰트로 发行时间：2017-03-23</p>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目3</small></h4>
           </div>
-          <div class="col-md-5">
-              <img class="img-responsive" src="https://shp.qpic.cn/qqvideo_ori/0/d0023cizzy2_360_204/0" alt="">
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目3</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目3</small></h4>
+          </div>
+          <div class="col-md-3">
+              <img class="img-responsive" src="images/cx.jpg" alt="">
+              <h4 class="feature-heading">大唐三藏圣教序<br><small>栏目3</small></h4>
           </div>
         </div>
     </div>
 </div>
-<footer>
+
+<footer class="container">
     <p class="pull-right"><a href="#top">回到顶部</a></p>
-    <p>&copy;2017/03 jh2k</p>
+    <p>&copy;2017/04 jh2k</p>
 </footer>
 <!--modal-->
 <div class="modal fade" id="myModal">
@@ -201,7 +297,6 @@
   <form class="form">
     <fieldset>
     <div class="control-group">
-
           <!-- Text input-->
           <label class="control-label" for="input01">用户名</label>
           <div class="controls">
@@ -209,9 +304,7 @@
             <p class="help-block"></p>
           </div>
         </div>
-
     <div class="control-group">
-
           <!-- Text input-->
           <label class="control-label" for="input01">密码</label>
           <div class="controls">
@@ -219,9 +312,6 @@
             <p class="help-block">忘记密码</p>
           </div>
         </div>
-
-
-
     </fieldset>
   </form>
 
@@ -236,21 +326,5 @@
 <script src="libs/jquery.js"></script>
 <script src="libs/bootstrap.js"></script>
 <script src="scripts/index.js"></script>
-<script>
-    $(function () {
-        $('#summary').carousel();
-        $('#navbar-cx .navbar-collapse a').click(function (e) {
-            var href = $(this).attr('href');
-            var tabId = $(this).attr('data-tab');
-            if ('#' !== href) {
-                e.preventDefault();
-                  $(document).scrollTop($(href).offset().top - 70);
-                if (tabId) {
-                    $('#music-tab a[href=#' + tabId + ']').tab('show');
-                }
-            }
-        });
-    });
-</script>
 </body>
 </html>
