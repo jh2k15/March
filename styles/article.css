@@ -1,0 +1,18 @@
+body{background-color: #E9EDF0;padding-top: 60px;font-family: 'STSongti-SC-Regular';-webkit-font-smoothing: antialiased;}
+.list-body img{width:100%;}
+#pager-cx{padding: 0 10px;}
+#article-content .content-warp{background-color: #fff;margin-bottom: 10px;box-shadow: 0 0 2px rgba(0,0,0,0.2);padding: 20px;text-align: center;}
+.list-top{height: 30px;}
+.list-top .btn{background-color:#fff;border: 1px solid #ccc;}
+.list-top .btn .glyphicon-heart{color: #f15151;margin-right: 3px;}
+.list-top .btn .badge{margin-left: 3px;}
+.list-top h4{margin: 0;line-height: 30px;}
+.list-top h4 a{color: #555;text-decoration: underline;}
+.list-body p{    writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+     -webkit-text-orientation: upright;
+    margin: 0 auto;
+    height: 180px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}}
