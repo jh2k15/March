@@ -1,5 +1,5 @@
 /*list-article.html*/
-body{font-family: 'STSongti-SC-Regular';-webkit-font-smoothing: antialiased;}
+body{background-color: #E9E9e9;padding-top: 60px;-webkit-font-smoothing: antialiased;}
 #header-cx img{padding-left: 20px;}
 #content .col-md-8>.col-md-4>.content-warp{background-color: #fff;margin-bottom: 10px;box-shadow: 0 0 5px rgba(0,0,0,0.2);border-top-left-radius: 6px;border-top-right-radius: 6px;overflow: hidden;}
 

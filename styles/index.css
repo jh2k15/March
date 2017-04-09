@@ -25,3 +25,6 @@ footer p{text-align: center;padding: 30px 0;}
     #nav-tabs-cx+.tab-content h4{text-align: center;}
 }
 /*.stuckMenu{z-index: 9999;width: 100%;}*/
+
+#backToTop{font-size: 25px;border: 1px solid #ccc; padding: 10px;color: #555;}
+.backToTop-p{position: fixed;right: 10px;bottom:10px;height: 50px;width: 50px;}

@@ -12,7 +12,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#navbar-cx">
+<body>
 <!--顶部导航条-->
 
 <nav class="navbar navbar-default navbar-fixed-top transparent-cx1" id="navbar-cx">
@@ -30,14 +30,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a class="transparent-cx2" href="#btn-group-cx">分类 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#summary">热门</a></li>
+        <li class="active"><a class="transparent-cx2" href="">栏目一 <span class="sr-only">(current)</span></a></li>
+        <li><a href="">栏目二</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">最新<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目三<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#nav-tabs-cx" data-tab="china">栏目1</a></li>
-            <li><a href="#nav-tabs-cx" data-tab="america">栏目2</a></li>
-            <li><a href="#nav-tabs-cx" data-tab="korea">栏目3</a></li>
+            <li><a href="" >栏目1</a></li>
+            <li><a href="" >栏目2</a></li>
+            <li><a href="" >栏目3</a></li>
           </ul>
         </li>
       </ul>
@@ -45,7 +45,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">搜索</button>
+        <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
       </form>
       <div class="btn-group" role="group" aria-label="...">
         <button class="btn" data-toggle="modal" data-target="#myModal">登录</button>
@@ -95,58 +95,10 @@
   </a>
 </div>
 
-<!-- Single button -->
-<div id="btn-group-cx" class="container">
+<div id="btn-group-cx">
     <div class="recommend-line"><span>分类</span></div>
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目1<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目2<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目3<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目4<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目5<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
-    <div class="btn-group">
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">栏目6<span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </ul>
-    </div><!-- /btn-group -->
 </div>
+
 <!-- 最新 -->
 <div class="container">
   <div class="recommend-line"><span>最新</span></div>
@@ -256,6 +208,11 @@
             </div>
           </div>
         </div>
+
+
+
+
+
     </div>
 </div>
 
@@ -264,9 +221,12 @@
 
 
 <footer class="container">
-    <p class="pull-right"><a href="#top">回到顶部</a></p>
+
     <p>&copy;2017/04 jh2k</p>
 </footer>
+<div class="backToTop-p">
+  <a href="javascript:;" class="glyphicon glyphicon-arrow-up" id="backToTop"></a>
+</div>
 <!--modal-->
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
@@ -308,6 +268,41 @@
 </div>
 <script src="libs/jquery.js"></script>
 <script src="libs/bootstrap.js"></script>
+
 <script src="scripts/index.js"></script>
+<script>
+    window.onload=function(){
+        var btn=document.getElementById('backToTop');
+        var clientHeight=document.documentElement.clientHeight || document.body.clientHeight;
+        var timer=null;
+        var isTop=true;
+        window.onscroll=function(){
+            var osTop=document.documentElement.scrollTop || document.body.scrollTop;
+            if(osTop>=clientHeight){
+                btn.style.display="block";
+            }else{
+                btn.style.display="none";
+            }
+            if(!isTop){
+                clearInterval(timer);
+            }
+            isTop=false;
+        }
+        btn.onclick=function(){
+            timer=setInterval(function(){
+                var osTop=document.documentElement.scrollTop || document.body.scrollTop;//
+                var ispeed=Math.floor(-osTop/8);
+                document.documentElement.scrollTop=document.body.scrollTop=osTop+ispeed;
+                // console.log(osTop+ispeed);
+                    if(osTop==0){
+                    clearInterval(timer);
+                    }
+                    isTop=true;
+                }
+
+                ,30);
+        }
+    }
+</script>
 </body>
 </html>
