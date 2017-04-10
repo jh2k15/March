@@ -16,4 +16,22 @@ body{background-color: #E9E9e9;padding-top: 60px;-webkit-font-smoothing: antiali
     height: 180px;
     font-size: 18px;
     padding-bottom: 10px;
-}}
+}
+#comment{background-color: #fff;
+padding: 15px;}
+#comment .area{width: 100%;
+        outline: none;
+
+    height: 145px;
+    resize: none;
+    background:#fff;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    color: #808080;
+    padding: 12px 0 0 15px;
+    box-shadow: 0px 0px 3px 0px #555 inset;
+}
+.img-wrap{width: 50px;height: 50px;margin-right: 20px;}
+.review{padding-top: 50px;}
+#comment img{width: 100%;height: 100%}
