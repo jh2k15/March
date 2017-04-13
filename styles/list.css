@@ -5,10 +5,12 @@ body{background-color: #E9E9e9;padding-top: 60px;-webkit-font-smoothing: antiali
 
 #content .col-md-8+.col-md-4 .content-warp{background-color: #fff;margin-bottom: 10px;box-shadow: 0 0 2px rgba(0,0,0,0.2);padding: 20px;}
 
-.col-md-8,.col-md-3{padding-left: 5px;padding-right: 5px;}
+.col-md-8,.col-md-4{padding-left: 5px;padding-right: 5px;}
 #content nav{text-align: center;}
 #content nav a{color: #777;}
 #content nav .active a{background-color: #ccc;border-color: #ccc;}
 
 .stuckMenu{z-index: 9999;width: 100%;}
+
+#content .img{ height: 150px; width: 100%; background-size: cover;background-position: 0 -10px;}
 

@@ -1,5 +1,7 @@
 /*index.html*/
-body{padding-top: 50px;}
+body{padding-top: 50px;background-color: #f7f7f7}
+a{color: #000;text-decoration: none;display: block;}
+a:hover{color: #000;text-decoration: none;}
 .recommend-line{padding: 20px 0;position: relative;text-align: center;}
 .recommend-line:before , .recommend-line:after{
     display: block;
@@ -13,6 +15,11 @@ body{padding-top: 50px;}
 #navbar-collapse-1 .dropdown-menu > .active > a{background:0;color:#555;}
 footer:before{content: "";border-top: 1px solid #ccc;width: 100%;}
 footer p{text-align: center;padding: 30px 0;}
+
+.img-cx .txt-warp{padding: 10px;}
+.img-cx .content{display: none;color: #555;font-size: 14px;}
+.img-cx .btn{display: none;}
+.img-cx a{width: 100%;height: 98%;background-color: #fff;transition:all .2s ease;overflow: hidden;}
 @media (min-width: 768px){
     body{padding-top:0;}
     #navbar-cx .collapse{position: relative;}
@@ -23,6 +30,16 @@ footer p{text-align: center;padding: 30px 0;}
 
     #nav-tabs-cx+.tab-content{padding: 10px 0;}
     #nav-tabs-cx+.tab-content h4{text-align: center;}
+
+    .img-cx {overflow: hidden;width: 280px;height: 280px;}
+.img-cx .img-responsive{height: 160px;transition:all .2s ease;background-size:cover;background-position: 0 -5px;}
+
+
+.img-cx a:hover {box-shadow: 0 0 3px #555;}
+.img-cx a:hover .img-responsive{height: 60px;background-position: 0 -80px;transform: scale(1.1);}
+.img-cx a:hover .btn{display: block;}
+.img-cx a:hover .content{display: block;}
+.img-cx a:hover .date{display: none;}
 }
 /*.stuckMenu{z-index: 9999;width: 100%;}*/
 
@@ -34,4 +51,9 @@ footer p{text-align: center;padding: 30px 0;}
  .list-footer{padding-bottom: 10px;}
  .list-footer a{color: #555;margin-left: 15px;font-size: 14px;}
  .list-footer a:hover{text-decoration: none;color: #f15151;}
-#hot{background-color: #E9E9e9;}
+.media-cx{padding: 10px;}
+.media-cx .media-body{padding:8px 32px;}
+.media-cx .img{height: 118px;width: 210px;background-size: cover;background-position: 0 -15px;}
+.media-cx:hover h4{text-decoration: underline;}
+.media-cx:hover{border: 1px solid #b3c0cb;}
+.media-cx .content{color: #555;font-size: 14px;}
